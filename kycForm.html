@@ -38,10 +38,10 @@
                   <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                </li>
                <li class="nav-item d-none d-sm-inline-block">
-                  <a href="index3.html" class="nav-link">Home</a>
+                  <a href="" class="nav-link">Home</a>
                </li>
                <li class="nav-item d-none d-sm-inline-block">
-                  <a href="#" class="nav-link">Contact</a>
+                  <a href="" class="nav-link">Contact</a>
                </li>
             </ul>
 
@@ -286,7 +286,7 @@
                         <div class="card card-default">
                            <div class="card-body p-0">
                               <div class="bs-stepper p-3">
-                                 <div class="bs-stepper-header" role="tablist">
+                                 <div class="bs-stepper-header overflow-auto" role="tablist">
                                     <!-- Personal Data -->
                                     <div class="step" data-target="#personal-data-part">
                                        <button
@@ -300,7 +300,7 @@
                                           <span class="bs-stepper-label">Personal Data</span>
                                        </button>
                                     </div>
-                                    <div class="line"></div>
+                                    <div class="line d-none d-md-block"></div>
 
                                     <!-- Complementary Data-->
                                     <div class="step" data-target="#complementary-data-part">
@@ -315,7 +315,7 @@
                                           <span class="bs-stepper-label">Complementary Data</span>
                                        </button>
                                     </div>
-                                    <div class="line"></div>
+                                    <div class="line d-none d-md-block"></div>
 
                                     <!-- User Data -->
                                     <div class="step" data-target="#user-data-part">
@@ -330,7 +330,7 @@
                                           <span class="bs-stepper-label">User Data</span>
                                        </button>
                                     </div>
-                                    <div class="line"></div>
+                                    <div class="line d-none d-md-block"></div>
 
                                     <!-- Confirmation Data -->
                                     <div class="step" data-target="#confirmation-data-part">
@@ -475,7 +475,7 @@
                                                    <input
                                                       type="text"
                                                       class="form-control"
-                                                      data-inputmask='"mask": "(999) 999-9999"'
+                                                      data-inputmask='"mask": "(9999) 9999-9999"'
                                                       data-mask
                                                    />
                                                 </div>
@@ -499,7 +499,7 @@
 
                                           <div class="input-group">
                                              <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                                <span class="input-group-text"><i class="fas fa-address-card"></i></span>
                                              </div>
                                              <input
                                                 type="text"
@@ -646,7 +646,7 @@
       <script>
          $(function () {
             $(".toastrDefaultSuccess").click(function () {
-               toastr.success("Lorem ipsum dolor sit amet, consetetur sadipscing elitr.");
+               toastr.success("Form submitted successfully");
             });
             $(".toastrDefaultInfo").click(function () {
                toastr.info("Lorem ipsum dolor sit amet, consetetur sadipscing elitr.");
@@ -681,5 +681,8 @@
             window.stepper = new Stepper(document.querySelector(".bs-stepper"));
          });
       </script>
+
+      <!-- AdminLTE App -->
+      <script src="dist/js/adminlte.js"></script>
    </body>
 </html>
